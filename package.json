@@ -1,19 +1,27 @@
 {
-  "name": "language-vectorcast",
-  "version": "0.2.0",
-  "description": "VectorCAST language support in Atom",
-  "author": {
-    "name": "Christof Efkemann",
-    "email": "chref@verified.de"
-  },
-  "keywords": [
-    "language",
-    "vectorcast"
-  ],
-  "repository": "https://github.com/chref/language-vectorcast",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {}
+    "name": "vectorcode",
+    "displayName": "vectorcode",
+    "description": "This is fork of Atom extension language-vectorcast for providing VectorCAST language support in VS Code",
+    "version": "0.0.1",
+    "publisher": "tkisielewski",
+    "repository": {"url": "https://github.com/tkisielewski/language-vectorcast"},
+    "engines": {
+        "vscode": "^1.34.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "vectorcast",
+            "aliases": ["VectorCAST", "vectorcast"],
+            "extensions": [".tst"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "vectorcast",
+            "scopeName": "source.vectorcast",
+            "path": "./syntaxes/vectorcast.tmLanguage.json"
+        }]
+    }
 }

@@ -1,3 +1,4 @@
+Copyright (c) 2019 Tomasz Kisielewski
 Copyright (c) 2017 Christof Efkemann
 
 Permission is hereby granted, free of charge, to any person obtaining
